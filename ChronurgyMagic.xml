@@ -1,37 +1,72 @@
-<Subclass>
-  <Name>Chronurgy Magic</Name>
-  <Class>Wizard</Class>
-  <Source>Explorer's Guide to Wildemount</Source>
-  <Features>
-    <Feature>
-      <Name>Chronal Shift</Name>
-      <Level>2</Level>
-      <Type>Reaction</Type>
-      <Description>Bir d20 atışını tekrar ettir. Kullanım: 1/short rest</Description>
-    </Feature>
-    <Feature>
-      <Name>Temporal Awareness</Name>
-      <Level>2</Level>
-      <Type>Passive</Type>
-      <Description>Inisiyatif atışına Intelligence modifikatorünü ekle.</Description>
-    </Feature>
-    <Feature>
-      <Name>Momentary Stasis</Name>
-      <Level>6</Level>
-      <Type>Action</Type>
-      <Description>Hedef yaratıcıyı bir tur boyunca etkisiz bırak (Constitution save atlatabilir)</Description>
-    </Feature>
-    <Feature>
-      <Name>Arcane Abeyance</Name>
-      <Level>10</Level>
-      <Type>Special</Type>
-      <Description>Bir yaratıcıya büyü attırabilir veya büyüyü depolayıp istediğin anda serbest bırakabilirsin</Description>
-    </Feature>
-    <Feature>
-      <Name>Convergent Future</Name>
-      <Level>14</Level>
-      <Type>Reaction</Type>
-      <Description>Bir atışın başarılı veya başarısız olmasını seçebilirsin. Günlük sınırlı kullanım.</Description>
-    </Feature>
-  </Features>
-</Subclass>
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Chronurgy Magic</name>
+		<update version="0.0.1">
+			<file name="ChronurgyMagic.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ChronurgyMagic.xml" />
+		</update>
+	</info>
+	
+	<element name="Chronurgy Magic" type="Archetype" source="Explorer's Guide to Wildemount" id="ID_CHRONURGY_MAGIC">
+		<supports>Wizard</supports>
+		<description>
+			<p>Zaman büyüsü üzerine uzmanlaşmış bir wizard alt sınıfı.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CHRONURGY_CHRONAL_SHIFT" level="2" />
+			<grant type="Archetype Feature" id="ID_CHRONURGY_TEMPORAL_AWARENESS" level="2" />
+			<grant type="Archetype Feature" id="ID_CHRONURGY_MOMENTARY_STASIS" level="6" />
+			<grant type="Archetype Feature" id="ID_CHRONURGY_ARCANE_ABEYANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_CHRONURGY_CONVERGENT_FUTURE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Chronal Shift" type="Archetype Feature" source="Explorer's Guide to Wildemount" id="ID_CHRONURGY_CHRONAL_SHIFT">
+		<description>
+			<p>Bir d20 atışını tekrar ettir. Kullanım: 1/short rest</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>Bir d20 atışını tekrar ettir.</description>
+		</sheet>
+	</element>
+
+	<element name="Temporal Awareness" type="Archetype Feature" source="Explorer's Guide to Wildemount" id="ID_CHRONURGY_TEMPORAL_AWARENESS">
+		<description>
+			<p>Inisiyatif atışına Intelligence modifikatorünü ekle.</p>
+		</description>
+		<sheet>
+			<description>Inisiyatif atışına Intelligence modifikatorünü ekle.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Momentary Stasis" type="Archetype Feature" source="Explorer's Guide to Wildemount" id="ID_CHRONURGY_MOMENTARY_STASIS">
+		<description>
+			<p>Hedef yaratıcıyı bir tur boyunca etkisiz bırak (Constitution save atlatabilir)</p>
+		</description>
+		<sheet action="Action">
+			<description>Hedef yaratıcıyı bir tur boyunca etkisiz bırak (Constitution save atlatabilir)</description>
+		</sheet>
+	</element>
+
+	<element name="Arcane Abeyance" type="Archetype Feature" source="Explorer's Guide to Wildemount" id="ID_CHRONURGY_ARCANE_ABEYANCE">
+		<description>
+			<p>Bir yaratıcıya büyü attırabilir veya büyüyü depolayıp istediğin anda serbest bırakabilirsin</p>
+		</description>
+		<sheet>
+			<description>Bir yaratıcıya büyü attırabilir veya büyüyü depolayıp istediğin anda serbest bırakabilirsin</description>
+		</sheet>
+	</element>
+
+	<element name="Convergent Future" type="Archetype Feature" source="Explorer's Guide to Wildemount" id="ID_CHRONURGY_CONVERGENT_FUTURE">
+		<description>
+			<p>Bir atışın başarılı veya başarısız olmasını seçebilirsin. Günlük sınırlı kullanım.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Bir atışın başarılı veya başarısız olmasını seçebilirsin. Günlük sınırlı kullanım.</description>
+		</sheet>
+	</element>
+</elements>

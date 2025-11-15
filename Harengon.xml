@@ -1,31 +1,58 @@
-<Race>
-  <Name>Harengon</Name>
-  <Source>The Wild Beyond the Witchlight</Source>
-  <AbilityScore>
-    <Int>2</Int>
-    <Dex>1</Dex>
-  </AbilityScore>
-  <Size>Medium</Size>
-  <Speed>30</Speed>
-  <Languages>
-    <Language>Common</Language>
-    <Language>OneExtra</Language>
-  </Languages>
-  <Traits>
-    <Trait>
-      <Name>Hare Trigger</Name>
-      <Type>Passive</Type>
-      <Description>Inisiyatif atarken Intelligence modifikatorünü ekle.</Description>
-    </Trait>
-    <Trait>
-      <Name>Lucky Footwork</Name>
-      <Type>Reaction</Type>
-      <Description>DEX kurtarma atışında başarısız olursan +d4 ekle.</Description>
-    </Trait>
-    <Trait>
-      <Name>Rabbit Hop</Name>
-      <Type>Bonus Action</Type>
-      <Description>Bonus Action ile fırsat saldırısı almadan 10ft hareket et (Level 5: 15ft)</Description>
-    </Trait>
-  </Traits>
-</Race>
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Harengon</name>
+		<update version="0.0.1">
+			<file name="Harengon.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Harengon.xml" />
+		</update>
+	</info>
+	
+	<element name="Harengon" type="Race" source="The Wild Beyond the Witchlight" id="ID_RACE_HARENGON">
+		<description>
+			<p>Tavşan benzeri hızlı ve çevik yaratıklar.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" />
+			<stat name="dexterity" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Harengon)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_HARENGON_HARE_TRIGGER" />
+			<grant type="Racial Trait" id="ID_HARENGON_LUCKY_FOOTWORK" />
+			<grant type="Racial Trait" id="ID_HARENGON_RABBIT_HOP" />
+		</rules>
+	</element>
+
+	<element name="Hare Trigger" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_HARENGON_HARE_TRIGGER">
+		<description>
+			<p>Inisiyatif atarken Intelligence modifikatorünü ekle.</p>
+		</description>
+		<sheet>
+			<description>Inisiyatif atarken Intelligence modifikatorünü ekle.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Lucky Footwork" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_HARENGON_LUCKY_FOOTWORK">
+		<description>
+			<p>DEX kurtarma atışında başarısız olursan 1d4 ekle.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>DEX kurtarma atışında başarısız olursan 1d4 ekle.</description>
+		</sheet>
+	</element>
+
+	<element name="Rabbit Hop" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_HARENGON_RABBIT_HOP">
+		<description>
+			<p>Bonus Action ile fırsat saldırısı almadan 10ft hareket et (Level 5: 15ft)</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Fırsat saldırısı almadan 10ft hareket et</description>
+			<description level="5">Fırsat saldırısı almadan 15ft hareket et</description>
+		</sheet>
+	</element>
+</elements>
