@@ -1,0 +1,37 @@
+<Subclass>
+  <Name>Chronurgy Magic</Name>
+  <Class>Wizard</Class>
+  <Source>Explorer's Guide to Wildemount</Source>
+  <Features>
+    <Feature>
+      <Name>Chronal Shift</Name>
+      <Level>2</Level>
+      <Type>Reaction</Type>
+      <Description>Bir d20 atışını tekrar ettir. Kullanım: 1/short rest</Description>
+    </Feature>
+    <Feature>
+      <Name>Temporal Awareness</Name>
+      <Level>2</Level>
+      <Type>Passive</Type>
+      <Description>Inisiyatif atışına Intelligence modifikatorünü ekle.</Description>
+    </Feature>
+    <Feature>
+      <Name>Momentary Stasis</Name>
+      <Level>6</Level>
+      <Type>Action</Type>
+      <Description>Hedef yaratıcıyı bir tur boyunca etkisiz bırak (Constitution save atlatabilir)</Description>
+    </Feature>
+    <Feature>
+      <Name>Arcane Abeyance</Name>
+      <Level>10</Level>
+      <Type>Special</Type>
+      <Description>Bir yaratıcıya büyü attırabilir veya büyüyü depolayıp istediğin anda serbest bırakabilirsin</Description>
+    </Feature>
+    <Feature>
+      <Name>Convergent Future</Name>
+      <Level>14</Level>
+      <Type>Reaction</Type>
+      <Description>Bir atışın başarılı veya başarısız olmasını seçebilirsin. Günlük sınırlı kullanım.</Description>
+    </Feature>
+  </Features>
+</Subclass>

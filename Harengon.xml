@@ -1,0 +1,31 @@
+<Race>
+  <Name>Harengon</Name>
+  <Source>The Wild Beyond the Witchlight</Source>
+  <AbilityScore>
+    <Int>2</Int>
+    <Dex>1</Dex>
+  </AbilityScore>
+  <Size>Medium</Size>
+  <Speed>30</Speed>
+  <Languages>
+    <Language>Common</Language>
+    <Language>OneExtra</Language>
+  </Languages>
+  <Traits>
+    <Trait>
+      <Name>Hare Trigger</Name>
+      <Type>Passive</Type>
+      <Description>Inisiyatif atarken Intelligence modifikatorünü ekle.</Description>
+    </Trait>
+    <Trait>
+      <Name>Lucky Footwork</Name>
+      <Type>Reaction</Type>
+      <Description>DEX kurtarma atışında başarısız olursan +d4 ekle.</Description>
+    </Trait>
+    <Trait>
+      <Name>Rabbit Hop</Name>
+      <Type>Bonus Action</Type>
+      <Description>Bonus Action ile fırsat saldırısı almadan +10ft hareket et (Level 5: 15ft)</Description>
+    </Trait>
+  </Traits>
+</Race>
