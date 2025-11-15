@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Alert Feat</name>
+		<update version="0.0.1">
+			<file name="AlertFeat.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/AlertFeat.xml" />
+		</update>
+	</info>
+	
+	<element name="Alert" type="Feat" source="Player's Handbook" id="ID_PHB_FEAT_ALERT">
+		<description>
+			<p>Always on the lookout for danger, you gain the following benefits:</p>
+			<ul>
+				<li>You gain a +5 bonus to initiative.</li>
+				<li>You can't be surprised while you are conscious.</li>
+				<li>Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can't be surprised while conscious. Creatures don't gain advantage on attack rolls against you from being unseen.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="5" />
+		</rules>
+	</element>
+</elements>

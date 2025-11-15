@@ -2,9 +2,9 @@
 <index>
 	<info>
 		<name>Fenric's Homebrew</name>
-		<description>Özel D&amp;D 5e içeriği - Harengon ırkı ve Chronurgy Magic alt sınıfı</description>
+		<description>Özel D&amp;D 5e içeriği - Harengon ırkı, Chronurgy Magic alt sınıfı, Scholar background, Alert feat ve Gift of Alacrity büyüsü</description>
 		<author url="https://github.com/hibrahimylmz/FenricHomebrew">Fenric</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="custom.index" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/custom.index" />
 		</update>
 	</info>
@@ -12,5 +12,7 @@
 		<file name="Harengon.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Harengon.xml" />
 		<file name="ChronurgyMagic.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ChronurgyMagic.xml" />
 		<file name="ScholarBackground.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ScholarBackground.xml" />
+		<file name="AlertFeat.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/AlertFeat.xml" />
+		<file name="GiftOfAlacrity.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/GiftOfAlacrity.xml" />
 	</files>
 </index>
