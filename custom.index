@@ -11,5 +11,6 @@
 	<files>
 		<file name="Harengon.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Harengon.xml" />
 		<file name="ChronurgyMagic.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ChronurgyMagic.xml" />
+		<file name="ScholarBackground.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ScholarBackground.xml" />
 	</files>
 </index>
