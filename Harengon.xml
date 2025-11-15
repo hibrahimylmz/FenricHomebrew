@@ -25,7 +25,7 @@
     <Trait>
       <Name>Rabbit Hop</Name>
       <Type>Bonus Action</Type>
-      <Description>Bonus Action ile fırsat saldırısı almadan +10ft hareket et (Level 5: 15ft)</Description>
+      <Description>Bonus Action ile fırsat saldırısı almadan 10ft hareket et (Level 5: 15ft)</Description>
     </Trait>
   </Traits>
 </Race>
