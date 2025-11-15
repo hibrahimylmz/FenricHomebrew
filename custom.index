@@ -1,2 +1,15 @@
-Harengon.xml
-ChronurgyMagic.xml
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Fenric's Homebrew</name>
+		<description>Özel D&amp;D 5e içeriği - Harengon ırkı ve Chronurgy Magic alt sınıfı</description>
+		<author url="https://github.com/hibrahimylmz/FenricHomebrew">Fenric</author>
+		<update version="0.0.1">
+			<file name="custom.index" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/custom.index" />
+		</update>
+	</info>
+	<files>
+		<file name="Harengon.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Harengon.xml" />
+		<file name="ChronurgyMagic.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ChronurgyMagic.xml" />
+	</files>
+</index>
