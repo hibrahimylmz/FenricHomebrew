@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grist</name>
+		<update version="0.0.1">
+			<file name="Grist.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Grist.xml" />
+		</update>
+	</info>
+	
+	<element name="Grist" type="Spell" source="Homebrew" id="ID_HOMEBREW_SPELL_GRIST">
+		<supports>Wizard, Druid, Artificer</supports>
+		<description>
+			<p>You touch a nonmagical object, which must be contained entirely within a 5-foot cube, and revert it into its raw materials. For example, an iron sword with a wooden handle targeted by this spell may transform into chunks of iron ore and chips of wood. The exact composition of the converted material is determined by the DM.</p>
+			<p class="indent">If you target an object being held or carried by an unwilling creature, that creature must make a Dexterity saving throw. On a success, the spell fails.</p>
+		</description>
+		<setters>
+			<set name="keywords">chronomancy</set>
+			<set name="level">2</set>
+			<set name="school">chronomancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Undo Harm</name>
+		<update version="0.0.1">
+			<file name="UndoHarm.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/UndoHarm.xml" />
+		</update>
+	</info>
+	
+	<element name="Undo Harm" type="Spell" source="Homebrew" id="ID_HOMEBREW_SPELL_UNDO_HARM">
+		<supports>Cleric, Druid, Destine</supports>
+		<description>
+			<p>You reverse time around a fresh wound, healing some of the damage. A creature you touch regains up to 1d4 hit points, but no higher than the amount of damage that they took since their last turn.</p>
+			<p class="indent">The spell's healing increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">chronomancy, healing</set>
+			<set name="level">0</set>
+			<set name="school">chronomancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">ginger root and kale leaves</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

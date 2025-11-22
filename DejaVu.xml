@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Déjà Vu</name>
+		<update version="0.0.1">
+			<file name="DejaVu.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/DejaVu.xml" />
+		</update>
+	</info>
+	
+	<element name="Déjà Vu" type="Spell" source="Homebrew" id="ID_HOMEBREW_SPELL_DEJA_VU">
+		<supports>Wizard, Bard</supports>
+		<description>
+			<p>You briefly rewind the thoughts a creature of your choice that you can see within range. The target must succeed on a Wisdom saving throw or, on their next turn, be forced to use its action to take the same action it took on its previous turn. If the target is unable to take that action again, it instead takes no action.</p>
+			<p class="indent">For example, if a creature under the effects of this spell made a weapon attack with a maul on their last turn, they must do so again this turn, though they may choose a different target. If the creature used their action to cast a spell, they must cast the same spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">chronomancy</set>
+			<set name="level">1</set>
+			<set name="school">chronomancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small silver mirror</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

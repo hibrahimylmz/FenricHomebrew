@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Recall Haste</name>
+		<update version="0.0.1">
+			<file name="RecallHaste.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/RecallHaste.xml" />
+		</update>
+	</info>
+	
+	<element name="Recall" type="Spell" source="Homebrew" id="ID_HOMEBREW_SPELL_RECALL">
+		<supports>Wizard, Sorcerer, Warlock</supports>
+		<description>
+			<p>Record where you are when you cast this spell. Until the end of your next turn, you can use your reaction to teleport back to that location, or to the nearest unoccupied space. If you use this reaction in response to an attack, spell, magical effect, or any other damaging effect, resolve the triggering effect before teleporting.</p>
+		</description>
+		<setters>
+			<set name="keywords">chronomancy</set>
+			<set name="level">2</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Haste" type="Spell" source="Player's Handbook" id="ID_PHB_SPELL_HASTE">
+		<supports>Wizard, Sorcerer, Artificer</supports>
+		<description>
+			<p>Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+			<p class="indent">When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.</p>
+		</description>
+		<setters>
+			<set name="keywords">chronomancy</set>
+			<set name="level">3</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shaving of licorice root</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

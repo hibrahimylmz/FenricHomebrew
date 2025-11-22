@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Time's Arrow</name>
+		<update version="0.0.1">
+			<file name="TimesArrow.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/TimesArrow.xml" />
+		</update>
+	</info>
+	
+	<element name="Time's Arrow" type="Spell" source="Homebrew" id="ID_HOMEBREW_SPELL_TIMES_ARROW">
+		<supports>Wizard, Sorcerer, Ranger, Destine</supports>
+		<description>
+			<p>You freeze a projectile that you can see within range mid-flight in attempt to alter its trajectory. If the projectile would otherwise hit, it instead becomes suspended in midair 5 feet from its original target. If it would otherwise miss, the DM determines the location of the now frozen projectile. Within the same reaction, you can reposition the frozen projectile to hit a target of your choice, provided they are within the weapon or spell's range from the projectile's new location. Alternatively, you can cause the projectile to drop to the ground harmlessly, fizzling, if it's a magical effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">chronomancy</set>
+			<set name="level">3</set>
+			<set name="school">chronomancy</set>
+			<set name="time">1 reaction, which you take when you see a creature make a ranged weapon attack</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

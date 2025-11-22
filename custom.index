@@ -2,9 +2,9 @@
 <index>
 	<info>
 		<name>Fenric's Homebrew</name>
-		<description>Özel D&amp;D 5e içeriği - Harengon ırkı, Chronurgy Magic alt sınıfı, Scholar background, Alert feat ve Gift of Alacrity büyüsü</description>
+		<description>Özel D&amp;D 5e içeriği - Harengon ırkı, Chronurgy Magic alt sınıfı, Scholar background, Alert feat ve dunamancy büyüleri</description>
 		<author url="https://github.com/hibrahimylmz/FenricHomebrew">Fenric</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="custom.index" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/custom.index" />
 		</update>
 	</info>
@@ -14,5 +14,15 @@
 		<file name="ScholarBackground.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ScholarBackground.xml" />
 		<file name="AlertFeat.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/AlertFeat.xml" />
 		<file name="GiftOfAlacrity.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/GiftOfAlacrity.xml" />
+		<file name="DejaVu.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/DejaVu.xml" />
+		<file name="FastForwardReverse.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/FastForwardReverse.xml" />
+		<file name="Halt.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Halt.xml" />
+		<file name="Grist.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Grist.xml" />
+		<file name="HurryDelay.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/HurryDelay.xml" />
+		<file name="TimesArrow.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/TimesArrow.xml" />
+		<file name="Slow.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Slow.xml" />
+		<file name="UndoHarm.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/UndoHarm.xml" />
+		<file name="DireWarning.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/DireWarning.xml" />
+		<file name="RecallHaste.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/RecallHaste.xml" />
 	</files>
 </index>
