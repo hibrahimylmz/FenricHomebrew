@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arcane Grimoire</name>
+		<update version="0.0.1">
+			<file name="ArcaneGrimoire.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ArcaneGrimoire.xml" />
+		</update>
+	</info>
+	
+	<!-- Arcane Grimoire +1 (Uncommon) -->
+	<element name="Arcane Grimoire +1" type="Magic Item" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_ARCANE_GRIMOIRE_1">
+		<description>
+			<p>While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.</p>
+			<p class="indent">You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1.</p>
+			<p class="indent">At the end of a long rest, you can use this grimoire to replace a number of prepared wizard spells equal to 1d6-1 (minimum 0) with other spells from your spellbook.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement" addition="by a wizard">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" bonus="enhancement" />
+			<stat name="spellcasting:dc" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<!-- Arcane Grimoire +2 (Rare) -->
+	<element name="Arcane Grimoire +2" type="Magic Item" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_ARCANE_GRIMOIRE_2">
+		<description>
+			<p>While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.</p>
+			<p class="indent">You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1.</p>
+			<p class="indent">At the end of a long rest, you can use this grimoire to replace a number of prepared wizard spells equal to 1d6-1 (minimum 0) with other spells from your spellbook.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a wizard">true</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" bonus="enhancement" />
+			<stat name="spellcasting:dc" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+
+	<!-- Arcane Grimoire +3 (Very Rare) -->
+	<element name="Arcane Grimoire +3" type="Magic Item" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_ARCANE_GRIMOIRE_3">
+		<description>
+			<p>While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.</p>
+			<p class="indent">You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1.</p>
+			<p class="indent">At the end of a long rest, you can use this grimoire to replace a number of prepared wizard spells equal to 1d6-1 (minimum 0) with other spells from your spellbook.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a wizard">true</set>
+			<set name="enhancement">3</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="3" bonus="enhancement" />
+			<stat name="spellcasting:dc" value="3" bonus="enhancement" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>DarkWhisper's Burrowing Guardian</name>
+		<update version="0.0.1">
+			<file name="BurrowingGuardian.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/BurrowingGuardian.xml" />
+		</update>
+	</info>
+	
+	<element name="DarkWhisper's Burrowing Guardian" type="Spell" source="Homebrew" id="ID_HOMEBREW_SPELL_BURROWING_GUARDIAN">
+		<supports>Wizard, Warlock, Druid</supports>
+		<description>
+			<p>Menzilindeki boş bir noktada, toprağın altından sessizce yükseliyormuş gibi yarı saydam, çürümeyi çağrıştıran, topraktan ve solgun eterlerden şekillenmiş bir tavşan-ruh muhafızı belirir. Bu muhafız süre boyunca orada kalır; onu eylem olarak serbest bırakırsan veya senden 100 fitten fazla uzaklaşırsan dağılır.</p>
+			<p class="indent"><strong>Muhafızın Özellikleri:</strong></p>
+			<ul>
+				<li>Muhafız yalnızca sana görünür, diğer tüm yaratıklar için tamamen görünmezdir.</li>
+				<li>Hasar verilemezdir, dokunulamazdır.</li>
+				<li>Yanılsamaları sezerek yok sayar.</li>
+				<li>Görünmez yaratıkları ve Ethereal Plane'de olan bedenleri algılar.</li>
+			</ul>
+			<p class="indent"><strong>Uyarı Sistemi:</strong></p>
+			<p class="indent">Büyüyü yaparken muhafıza bir parola verirsin veya Darkwhisper soyunun toprağa özgü bir tılsımını fısıldarsın. Bir yaratık bu parola veya tılsım olmadan 30 fit yakına girerse muhafız toprağın içinden gelen ölü bir nefes gibi, derin, titrek bir çınlama üretir—çürüyen köklerin kırılışını andıran bir ses. Bu uyarı, ayaklarının altını kısa bir anlığına soğutur.</p>
+			<p class="indent"><strong>Saldırı – Çürütücü Toprak Isırığı:</strong></p>
+			<p class="indent">Her turun başında, muhafız 5 fit yakınındaki sana düşman bir yaratığı hedef alır. Saldırı bonusun: Büyü Yeteneği Modifiyerin + Uzmanlık bonusun.</p>
+			<p class="indent">İsabet ettiğinde: Muhafızın ayaklarının çevresindeki toprak bir anda kararır, kuru bir çürüme nefesiyle sarsılır ve düşmanın bacaklarının etrafında ölü toprağın çenesi gibi kapanır. Bu çene fiziksel değil—ruhu kemiren, canlılığı solduran bir çöküş anıdır. Hedef 4d8 magical slashing hasar alır.</p>
+			<p class="indent">Hasar alırken yaratığın derisini gri bir kuruluk kaplar, damarları bir anlığına karanlık ışıkla belirir ve toprağın içine çekiliyormuş gibi bir ürperti hisseder.</p>
+		</description>
+		<setters>
+			<set name="keywords">conjuration, necrotic, guardian</set>
+			<set name="level">4</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">içi toprak dolu küçük bir oyuk taş, kuru bir kök parçası ve bir tutam eski toz</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

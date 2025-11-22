@@ -24,5 +24,9 @@
 		<file name="UndoHarm.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/UndoHarm.xml" />
 		<file name="DireWarning.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/DireWarning.xml" />
 		<file name="RecallHaste.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/RecallHaste.xml" />
+		<file name="BurrowingGuardian.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/BurrowingGuardian.xml" />
+		<file name="WandChromaticOrb.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/WandChromaticOrb.xml" />
+		<file name="ArcaneGrimoire.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ArcaneGrimoire.xml" />
+		<file name="WhisperedEchoGloves.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/WhisperedEchoGloves.xml" />
 	</files>
 </index>

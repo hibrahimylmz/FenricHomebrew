@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Whispered Echo Gloves</name>
+		<update version="0.0.1">
+			<file name="WhisperedEchoGloves.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/WhisperedEchoGloves.xml" />
+		</update>
+	</info>
+	
+	<element name="Whispered Echo Gloves" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_MAGIC_ITEM_WHISPERED_ECHO_GLOVES">
+		<description>
+			<p>Bu ince, koyu kahverengi eldivenlerin üzerinde toprak çatlaklarını andıran doğal desenler bulunur. Eldivenler hafif bir titreşim taşır; sanki hareketlerin zamanın kıyısında bir yankı bırakıyormuş gibi.</p>
+			<p class="indent"><strong>Echo Slip:</strong> Eldivenlere attuned olduğun sürece, günde 1 kez, normalde "1 action" kullanılarak yapılan bir büyüyü bonus action olarak yapabilirsin. Bu özelliği kullanmadan önce karar vermelisin.</p>
+			<p class="indent">Bu özellik yalnızca şunları yapmana izin verir:</p>
+			<ul>
+				<li>Büyünün süresini yalnızca o tur için bonus action'a indirir.</li>
+				<li>Diğer tüm büyü kurallarına uyman gerekir (somatic, material, menzil vb.).</li>
+				<li>Aynı turda başka bir bonus action büyüsü yapamazsın.</li>
+			</ul>
+			<p class="indent">Bir büyüyü bonus action olarak yaptıktan sonra, eldivenin üzerindeki toprak desenleri hafifçe ısınır ve özelliği bir sonraki short rest bitene kadar tekrar kullanamazsın.</p>
+			<p class="indent"><em>Note: Once per day, bu eldivenleri takarken bir short rest tamamladığında özelliği yenilenir.</em></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">—</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+</elements>
