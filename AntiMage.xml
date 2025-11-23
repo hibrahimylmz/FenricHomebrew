@@ -55,14 +55,50 @@
 			<p class="indent"><em>Note: You cast these spells using stolen spell slots from Magic Siphoning. Your spellcasting ability is Strength.</em></p>
 		</description>
 		<sheet>
-			<description>You can cast Anti-Mage spells using stolen spell slots. Your spellcasting ability is Strength (spell save DC {{spellcasting:dc:str}}, spell attack +{{spellcasting:attack:str}}).</description>
+			<description>You can cast Anti-Mage spells using stolen spell slots. Your spellcasting ability is Strength (spell save DC {{anti-mage:dc}}, spell attack +{{anti-mage:attack}}).</description>
 		</sheet>
 		<rules>
-			<stat name="spellcasting:dc:str" value="8" />
-			<stat name="spellcasting:dc:str" value="proficiency" />
-			<stat name="spellcasting:dc:str" value="strength:modifier" />
-			<stat name="spellcasting:attack:str" value="proficiency" />
-			<stat name="spellcasting:attack:str" value="strength:modifier" />
+			<stat name="anti-mage:dc" value="8" />
+			<stat name="anti-mage:dc" value="proficiency" />
+			<stat name="anti-mage:dc" value="strength:modifier" />
+			<stat name="anti-mage:attack" value="proficiency" />
+			<stat name="anti-mage:attack" value="strength:modifier" />
+			
+			<!-- Spell list grants - commented out until actual spell files are created -->
+			<!-- 1st level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_ARCANE_SMITE" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_COUNTERTRIP" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_DARK_I" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 2nd level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_DISARM" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_WARD" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_DARK_II" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 3rd level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_SPELLBREAKING_SMITE" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_ABSORB_ENERGY" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_DARK_III" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 4th level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_AGONIZING_SMITE" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_TWIN_BOLTS_OF_DEMONFIRE" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 5th level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_DARKBOLT" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 6th level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_VOYAGE_INTO_SHADOW" spellcasting="Anti-Mage" level="3" />
+			<grant type="Spell" id="ID_HOMEBREW_SPELL_ANTIMAGIC_BLAST" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 7th level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_WITHERING_DESTRUCTION" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 8th level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_TOMB_OF_NIGHT" spellcasting="Anti-Mage" level="3" /> -->
+			
+			<!-- 9th level spells -->
+			<!-- <grant type="Spell" id="ID_HOMEBREW_SPELL_SHADOW_TIME" spellcasting="Anti-Mage" level="3" /> -->
 		</rules>
 	</element>
 
