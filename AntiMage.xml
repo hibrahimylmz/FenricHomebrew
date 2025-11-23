@@ -73,7 +73,8 @@
 			<stat name="anti-mage:spellcasting:slots:8" value="0" level="3" />
 			<stat name="anti-mage:spellcasting:slots:9" value="0" level="3" />
 			<stat name="anti-mage:prepared" value="strength:modifier" />
-			<stat name="anti-mage:prepared" value="level:fighter:third" />
+			<stat name="anti-mage:prepared" value="level:fighter" />
+			<stat name="anti-mage:prepared" value="-1" />
 			
 			<!-- Spell list grants - commented out until actual spell files are created -->
 			<!-- 1st level spells -->
