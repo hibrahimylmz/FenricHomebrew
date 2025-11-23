@@ -55,7 +55,7 @@
 			<p class="indent"><em>Note: You cast these spells using stolen spell slots from Magic Siphoning. Your spellcasting ability is Strength.</em></p>
 		</description>
 		<sheet>
-			<description>You can cast Anti-Mage spells using stolen spell slots. Your spellcasting ability is Strength (spell save DC {{anti-mage:dc}}, spell attack +{{anti-mage:attack}}).</description>
+			<description>You can cast Anti-Mage spells using stolen spell slots. Your spellcasting ability is Strength (spell save DC {{anti-mage:dc}}, spell attack +{{anti-mage:attack}}). You can prepare {{anti-mage:prepared}} Anti-Mage spells.</description>
 		</sheet>
 		<rules>
 			<stat name="anti-mage:dc" value="8" />
@@ -63,6 +63,17 @@
 			<stat name="anti-mage:dc" value="strength:modifier" />
 			<stat name="anti-mage:attack" value="proficiency" />
 			<stat name="anti-mage:attack" value="strength:modifier" />
+			<stat name="anti-mage:spellcasting:slots:1" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:2" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:3" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:4" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:5" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:6" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:7" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:8" value="0" level="3" />
+			<stat name="anti-mage:spellcasting:slots:9" value="0" level="3" />
+			<stat name="anti-mage:prepared" value="strength:modifier" />
+			<stat name="anti-mage:prepared" value="level:fighter:third" />
 			
 			<!-- Spell list grants - commented out until actual spell files are created -->
 			<!-- 1st level spells -->
