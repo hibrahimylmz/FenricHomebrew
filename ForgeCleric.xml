@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Forge Cleric</name>
+		<description>The Forge Domain for Cleric from Xanathar's Guide to Everything</description>
+		<author url="https://github.com/hibrahimylmz/FenricHomebrew">Fenric</author>
+		<update version="0.0.1">
+			<file name="ForgeCleric.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ForgeCleric.xml" />
+		</update>
+	</info>
+
+	<element name="Forge Domain" type="Archetype" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_CLERIC_FORGE_DOMAIN">
+		<supports>Domain</supports>
+		<description>
+			<p>The Forge Domain includes deities of craftsmen, smithies, and the crafting of physical items. Deities of this domain are patrons of artisans who work with metal, leather, and stone. A cleric of the Forge Domain is seen as a skilled craftsman in their own right. The most solemn is the dedication of new tools, the blessing of a new building or bridge, or the creation of a new magic item.</p>
+			<div element="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_SPELLS" />
+			<div element="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_BONUS_PROFICIENCIES" />
+			<div element="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_BLESSING_OF_THE_FORGE" />
+			<div element="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_CHANNEL_DIVINITY_ARTISANS_BLESSING" />
+			<div element="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_SOUL_OF_THE_FORGE" />
+			<div element="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_DIVINE_STRIKE" />
+		</description>
+		<sheet display="false">
+			<description>The Forge Domain blesses clerics with the ability to craft and create.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_BLESSING_OF_THE_FORGE" level="1" />
+			<grant type="Archetype Feature" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_CHANNEL_DIVINITY_ARTISANS_BLESSING" level="2" />
+			<grant type="Archetype Feature" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_SOUL_OF_THE_FORGE" level="6" />
+			<grant type="Archetype Feature" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_DIVINE_STRIKE" level="8" />
+		</rules>
+	</element>
+
+	<element name="Forge Domain Spells" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_SPELLS">
+		<description>
+			<p><em>1st-level Forge Domain feature</em></p>
+			<p>You gain domain spells at the cleric levels listed in the Forge Domain Spells table. See the Cleric class features for how domain spells work.</p>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>identify</em>, <em>searing smite</em></td></tr>
+				<tr><td>3rd</td><td><em>heat metal</em>, <em>magic weapon</em></td></tr>
+				<tr><td>5th</td><td><em>animate objects</em>, <em>wall of fire</em></td></tr>
+				<tr><td>7th</td><td><em>fabricate</em>, <em>wall of stone</em></td></tr>
+				<tr><td>9th</td><td><em>animate objects</em>, <em>creation</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" spellcasting="Cleric" prepared="true" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEARING_SMITE" spellcasting="Cleric" prepared="true" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Cleric" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Cleric" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Cleric" prepared="true" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Cleric" prepared="true" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATION" spellcasting="Cleric" prepared="true" level="9" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_BONUS_PROFICIENCIES">
+		<description>
+			<p><em>1st-level Forge Domain feature</em></p>
+			<p>You gain proficiency with heavy armor and smith's tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SMITHS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Blessing of the Forge" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_BLESSING_OF_THE_FORGE">
+		<description>
+			<p><em>1st-level Forge Domain feature</em></p>
+			<p>At the end of a long rest, you can touch one nonmagical object that is a suit of armor or a simple or martial weapon. The object becomes magical, gaining a +1 bonus to Armor Class if it's armor, or a +1 bonus to attack and damage rolls if it's a weapon. The benefit lasts until you use this feature again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At the end of a long rest, you can touch one nonmagical armor or weapon to make it magical with a +1 bonus (to AC or to attack and damage rolls). The benefit lasts until you use this feature again.</description>
+		</sheet>
+	</element>
+
+	<element name="Channel Divinity: Artisan's Blessing" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_CHANNEL_DIVINITY_ARTISANS_BLESSING">
+		<description>
+			<p><em>2nd-level Forge Domain feature</em></p>
+			<p>You can use your Channel Divinity to create nonmagical items. You conduct elaborate rituals of creation and consecration lasting 1 hour. At the end, you create a nonmagical item of your choice valued at 100 gp or less in a space you can see on a surface within 5 feet of you. The item must be Small or smaller. You can use this feature to repair a single break or tear in an object you touch, if the break or tear is no larger than 1 foot in any dimension. You can create multiple items during a long rest, provided you have enough ritual time, but you can't create items worth more than 500 gp this way.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>You conduct elaborate rituals of creation and consecration lasting 1 hour. At the end, you create a nonmagical item of your choice valued at 100 gp or less in a space within 5 feet. The item must be Small or smaller. You can also use this to repair a break or tear no larger than 1 foot. You can create multiple items during a long rest, but can't create items worth more than 500 gp this way.</description>
+		</sheet>
+	</element>
+
+	<element name="Soul of the Forge" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_SOUL_OF_THE_FORGE">
+		<description>
+			<p><em>6th-level Forge Domain feature</em></p>
+			<p>You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC.</p>
+			<p class="indent">At 17th level, your blessing of the forge now grants a +2 bonus to AC if it's armor, or a +2 bonus to attack and damage rolls if it's a weapon. Additionally, when you gain this feature at 6th level and at 17th level, you can increase the bonus to AC by +1 (to a total of +2 at 17th level) when wearing heavy armor.</p>
+		</description>
+		<sheet>
+			<description level="6">You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC.</description>
+			<description level="17">You gain resistance to fire damage. While wearing heavy armor, you gain a +2 bonus to AC. Your Blessing of the Forge now grants +2 instead of +1.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_CONDITION_RESISTANCE_FIRE" />
+			<stat name="ac:misc" value="1" bonus="soul of the forge" equipped="heavy armor" />
+		</rules>
+	</element>
+
+	<element name="Divine Strike" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_DIVINE_STRIKE">
+		<description>
+			<p><em>8th-level Forge Domain feature</em></p>
+			<p>You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage to the target. When you reach 14th level, the extra damage increases to 2d8. When you reach 17th level, the extra damage increases to 3d8.</p>
+		</description>
+		<sheet>
+			<description level="8">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 fire damage.</description>
+			<description level="17">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 3d8 fire damage.</description>
+		</sheet>
+	</element>
+</elements>

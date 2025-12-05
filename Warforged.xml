@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warforged</name>
+		<description>The Warforged race from Eberron</description>
+		<author url="https://github.com/hibrahimylmz/FenricHomebrew">Fenric</author>
+		<update version="0.0.1">
+			<file name="Warforged.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Warforged.xml" />
+		</update>
+	</info>
+
+	<!-- Warforged Race -->
+	<element name="Warforged" type="Race" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACE_WARFORGED">
+		<description>
+			<p>Warforged are animated objects brought to life by eladrin magic. Created as the perfect soldier and servant, each warforged was handcrafted to look like the ideal form of a humanoid creature of a particular race. The first warforged were made in the image of humans, but elves, dwarves, halflings, and other races were soon replicated. Warforged are made of wood and metal, leather and stone. Their bodies carry the mementos of their construction, given life by magic that was supposed to be transitory but became permanent.</p>
+			<p class="indent">Warforged have a unique relationship with magic. Instead of possessing an innate magical ability, each warforged can be created to incorporate a single piece of magical equipment into their body. This integrated tool cannot be stolen or removed against the warforged's will.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2" />
+			<stat name="constitution" value="1" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Speed" id="ID_SPEED_30" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_TOOL" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_SOULFORGED_BODY" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_UNSETTLING_VISAGE" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION" />
+		</rules>
+	</element>
+
+	<!-- Warforged Traits -->
+	<element name="Integrated Tool" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_TOOL">
+		<description>
+			<p>Choose one tool that is not a weapon. You can perform the functions of this integrated tool without much effort. You must have the tool in hand to use it. By 1st level, you have crafted a bond with your integrated tool, which can be replaced with a 10-minute ritual.</p>
+		</description>
+	</element>
+
+	<element name="Warforged Resilience" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_RESILIENCE">
+		<description>
+			<p>You were created to have remarkable fortitude, represented by the following benefits:</p>
+			<ul>
+				<li>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you do nothing but rest during the period.</li>
+				<li>You have advantage on saving throws against being poisoned, and you have resistance to poison damage.</li>
+				<li>You don't need to eat, drink, or breathe.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Soulforged Body" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_SOULFORGED_BODY">
+		<description>
+			<p>Even though you are constructed, you are a living creature. You are immune to disease. You don't need to eat or drink, and poison has no effect on you. You are immune to exhaustion caused by lack of sleep, since you don't sleep.</p>
+		</description>
+	</element>
+
+	<element name="Unsettling Visage" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_UNSETTLING_VISAGE">
+		<description>
+			<p>When a creature you can see makes an attack roll against you, you can use your reaction to impose disadvantage on that roll before the outcome is determined. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+	</element>
+
+	<element name="Integrated Protection" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION">
+		<description>
+			<p>Your body has built-in defensive layers. You gain a +1 bonus to AC. You can don and doff armor, and when you do, you can choose to have the armor integrated into your body, so it doesn't take up an equipment slot. Integrated armor can't be removed against your will.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ac:misc" value="1" bonus="racial" />
+		</rules>
+	</element>
+
+	<!-- Demigod Warforged -->
+	<element name="Warforged (Demigod)" type="Race" source="Homebrew" id="ID_HOMEBREW_RACE_WARFORGED_DEMIGOD">
+		<description>
+			<p>Demigods, born of divine blood, walk the mortal realms as living legacies of the gods. Possessing a spark of their deity's power, these celestial beings are shaped by the Divine Domain that influences their existence. A Warforged Demigod combines the magical craftsmanship of warforged construction with the celestial power of divine heritage, creating a being of extraordinary potential.</p>
+			<p class="indent">Tied to a specific Divine Domain, a demigod's abilities and nature are deeply influenced by this bond. They might command storms, channel life-giving light, or weave intricate arcane magic, making them formidable beings in any realm. However, their power comes with great responsibility, as they often find themselves torn between the will of their divine progenitor and the challenges of mortal existence.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Speed" id="ID_SPEED_30" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_ABILITY_INCREASE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_CREATURE_TYPE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_ANCESTRAL_LEGACY" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_DARKVISION" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Increase (Demigod)" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_ABILITY_INCREASE">
+		<description>
+			<p>Increase one ability score by 2 and increase a different one by 1, or increase three different ability scores by 1.</p>
+		</description>
+	</element>
+
+	<element name="Creature Type (Demigod)" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_CREATURE_TYPE">
+		<description>
+			<p>You are a Celestial.</p>
+		</description>
+	</element>
+
+	<element name="Ancestral Legacy (Demigod)" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_ANCESTRAL_LEGACY">
+		<description>
+			<p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements, or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+		</description>
+	</element>
+
+	<element name="Darkvision (Demigod)" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_DARKVISION">
+		<description>
+			<p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+	<!-- Forge Domain Variant for Demigod -->
+	<element name="Forge (Demigod Domain)" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_FORGE_DOMAIN">
+		<description>
+			<p>You are closely related to the Forge Domain due to your godly heritage, granting you the following abilities:</p>
+			<p class="indent"><strong>Cantrip:</strong> You know the Mending cantrip.</p>
+			<p class="indent"><strong>3rd Level:</strong> Once you reach 3rd level, you can cast the Heat Metal spell once with this trait, and regain the ability to do so when you finish a long rest.</p>
+			<p class="indent"><strong>5th Level:</strong> Once you reach 5th level, you can cast the Galder's Tower spell once with this trait, and you regain the ability to do so when you finish a long rest.</p>
+			<p class="indent"><strong>Resistance:</strong> You have resistance to non-magical Bludgeoning damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" spellcasting="Innate" level="1" />
+			<!-- Grant Heat Metal at 3rd level -->
+			<!-- <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" spellcasting="Innate" level="3" /> -->
+			<!-- Grant Galder's Tower at 5th level -->
+			<!-- <grant type="Spell" id="ID_XGTE_SPELL_GALDERS_TOWER" spellcasting="Innate" level="5" /> -->
+		</rules>
+	</element>
+</elements>

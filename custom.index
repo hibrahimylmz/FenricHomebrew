@@ -29,5 +29,7 @@
 		<file name="ArcaneGrimoire.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ArcaneGrimoire.xml" />
 		<file name="WhisperedEchoGloves.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/WhisperedEchoGloves.xml" />
 		<file name="AntiMage.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/AntiMage.xml" />
+		<file name="Warforged.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Warforged.xml" />
+		<file name="ForgeCleric.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ForgeCleric.xml" />
 	</files>
 </index>
