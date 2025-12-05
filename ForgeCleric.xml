@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Forge Cleric</name>
+		<name>Forge Domain</name>
 		<description>The Forge Domain for Cleric from Xanathar's Guide to Everything</description>
 		<author url="https://github.com/hibrahimylmz/FenricHomebrew">Fenric</author>
 		<update version="0.0.1">
@@ -10,7 +10,7 @@
 	</info>
 
 	<element name="Forge Domain" type="Archetype" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_CLERIC_FORGE_DOMAIN">
-		<supports>Domain</supports>
+		<supports>Cleric Domain</supports>
 		<description>
 			<p>The Forge Domain includes deities of craftsmen, smithies, and the crafting of physical items. Deities of this domain are patrons of artisans who work with metal, leather, and stone. A cleric of the Forge Domain is seen as a skilled craftsman in their own right. The most solemn is the dedication of new tools, the blessing of a new building or bridge, or the creation of a new magic item.</p>
 			<div element="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_SPELLS" />
