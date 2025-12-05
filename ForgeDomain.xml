@@ -57,10 +57,6 @@
 			<p>You gain proficiency with heavy armor and smith's tools.</p>
 		</description>
 		<sheet display="false" />
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_HEAVY_ARMOR" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SMITHS_TOOLS" />
-		</rules>
 	</element>
 
 	<element name="Blessing of the Forge" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_BLESSING_OF_THE_FORGE">
@@ -93,9 +89,6 @@
 			<description level="6">You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC.</description>
 			<description level="17">You gain resistance to fire damage. While wearing heavy armor, you gain a +2 bonus to AC. Your Blessing of the Forge now grants +2 instead of +1.</description>
 		</sheet>
-		<rules>
-			<grant type="Condition" id="ID_CONDITION_RESISTANCE_FIRE" />
-		</rules>
 	</element>
 
 	<element name="Divine Strike" type="Archetype Feature" source="Xanathar's Guide to Everything" id="ID_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_DIVINE_STRIKE">
