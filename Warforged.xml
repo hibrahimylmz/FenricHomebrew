@@ -22,6 +22,7 @@
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Speed" id="ID_SPEED_30" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_CREATURE_TYPE" />
 			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_TOOL" />
 			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_RESILIENCE" />
 			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_SOULFORGED_BODY" />
@@ -31,6 +32,12 @@
 	</element>
 
 	<!-- Warforged Traits -->
+	<element name="Creature Type (Warforged)" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_CREATURE_TYPE">
+		<description>
+			<p>You are a Construct.</p>
+		</description>
+	</element>
+
 	<element name="Integrated Tool" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_TOOL">
 		<description>
 			<p>Choose one tool that is not a weapon. You can perform the functions of this integrated tool without much effort. You must have the tool in hand to use it. By 1st level, you have crafted a bond with your integrated tool, which can be replaced with a 10-minute ritual.</p>
@@ -85,6 +92,12 @@
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_CREATURE_TYPE" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_ANCESTRAL_LEGACY" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_DARKVISION" />
+			<!-- Warforged traits inherited -->
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_TOOL" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_SOULFORGED_BODY" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_UNSETTLING_VISAGE" />
+			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION" />
 		</rules>
 	</element>
 
@@ -96,7 +109,7 @@
 
 	<element name="Creature Type (Demigod)" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_CREATURE_TYPE">
 		<description>
-			<p>You are a Celestial.</p>
+			<p>You are both a Construct and a Celestial.</p>
 		</description>
 	</element>
 
@@ -123,7 +136,7 @@
 			<p class="indent"><strong>Cantrip:</strong> You know the Mending cantrip.</p>
 			<p class="indent"><strong>3rd Level:</strong> Once you reach 3rd level, you can cast the Heat Metal spell once with this trait, and regain the ability to do so when you finish a long rest.</p>
 			<p class="indent"><strong>5th Level:</strong> Once you reach 5th level, you can cast the Galder's Tower spell once with this trait, and you regain the ability to do so when you finish a long rest.</p>
-			<p class="indent"><strong>Resistance:</strong> You have resistance to non-magical Bludgeoning damage.</p>
+			<p class="indent"><strong>Resistance:</strong> You have resistance to Fire damage.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
