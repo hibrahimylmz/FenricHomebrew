@@ -31,5 +31,6 @@
 		<file name="AntiMage.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/AntiMage.xml" />
 		<file name="Warforged.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/Warforged.xml" />
 		<file name="ForgeCleric.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ForgeCleric.xml" />
+		<file name="ForgeDomain.xml" url="https://raw.githubusercontent.com/hibrahimylmz/FenricHomebrew/main/ForgeDomain.xml" />
 	</files>
 </index>
