@@ -19,8 +19,8 @@
 		<rules>
 			<stat name="strength" value="2" />
 			<stat name="constitution" value="1" />
+			<stat name="speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<grant type="Speed" id="ID_SPEED_30" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_CREATURE_TYPE" />
 			<grant type="Racial Trait" id="ID_WOTC_EBERRON_RACIAL_TRAIT_WARFORGED_INTEGRATED_TOOL" />
@@ -85,8 +85,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<stat name="speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<grant type="Speed" id="ID_SPEED_30" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_ABILITY_INCREASE" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_RACIAL_TRAIT_DEMIGOD_CREATURE_TYPE" />
